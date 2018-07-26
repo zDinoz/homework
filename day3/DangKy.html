@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        body {
+            font-size: 15px;
+            text-align: left;
+        }
+
+        .wrap {
+            width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border: 10px solid #ccc;
+            border-radius: 10px;
+        }
+        .wrap .textbox{
+            width: 363px;
+            height: 34px;
+            border-radius: 4px;
+            border: 1px solid green;
+        }
+        .wrap .textbox2{
+            width: 230px;
+            height: 34px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border: 1px solid green;
+            float: left;
+        }
+        .row {
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .row .col1 {
+            padding-top: 13px;
+            float: left;
+            width: 12%;
+        }
+
+        .row .col2 {
+            width: 80%;
+            padding-left: 50px;
+            float: left;
+            margin: 0px auto;
+        }
+        .row datalist{
+            float: left;
+            width: 20%;
+        }
+        .row select{
+            width: 80px;
+            height: 34px;
+            padding-left: 5px;
+            border-radius: 4px;
+            border: 1px solid green;
+        }
+        .row .gt input{
+            padding-top: 5px;
+            width: 32px;
+            height: 22px;
+        }
+        button{
+            width: 130px;
+            height: 38px;
+            background-color: #fdd835;
+            color: black;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: 1px solid #fdd835;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <form name="dangky" action="" method="post">
+        <div class="row">
+            <div class="col1">
+                Họ tên
+            </div>
+            <div class="col2">
+                <input class="textbox" type="text" name="username" placeholder="&#160;Nhập họ tên" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                SĐT
+            </div>
+            <div class="col2">
+                <input class="textbox2" type="text" name="SDT" placeholder="&#160;Nhập số điện thoại" value="">
+                <button class="btn">Gửi mã xác thực</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                Mã xác thực
+            </div>
+            <div class="col2">
+                <input class="textbox" type="text" name="Ma Xac Thuc" placeholder="&#160;Nhập mã xác thực" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                Email
+            </div>
+            <div class="col2">
+                <input class="textbox" type="text" name="Email" placeholder="&#160;Nhập Email" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                Mật Khẩu
+            </div>
+            <div class="col2">
+                <input class="textbox" type="text" name="Pass" placeholder="&#160;Mật khẩu từ 6-32 ký tự" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                Giới tính
+            </div>
+            <div class="col2 gt">
+                <input type="radio" name="username" value="Nam">&#160;Nam &#160;&#160;&#160;
+                <input type="radio" name="username" value="Nữ">&#160;Nữ
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                Ngày Sinh
+            </div>
+            <div class="col2">
+                <select name="Day" id="Day">
+                    <option value="00">Ngày</option>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                </select>
+                &#160;&#160;&#160;
+                <select name="Month" id="Month">
+                    ect name="Day" id="Day">
+                    <option value="00">Tháng</option>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+
+                </select>
+                &#160;&#160;&#160;
+                <select name="Year" id="Year">
+                    <option value="00">Năm</option>
+                    <option value="01">1992</option>
+                    <option value="02">1993</option>
+                    <option value="03">1994</option>
+                    <option value="04">1995</option>
+                    <option value="05">1996</option>
+                    <option value="06">1997</option>
+                    <option value="07">1998</option>
+
+                </select>
+                &#160;&#160;&#160;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                &#160;
+            </div>
+            <div class="col2">
+                <p><input type="checkbox" value="ok">Nhận các thông tin và chương trình khuyến mãi của Tiki qua email.
+                    Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo điều kiện sử dụng và chính sách của Tiki.</p>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
