@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        body{
+            font-family: Arial;
+            font-size: 14px;
+        }
+        .header{
+            background-color: #000000;
+            color: #FFFFFF;
+            width: 100%;
+            height: 43px;
+        }
+        .header .top{
+            float: left;
+            left: 50%;
+            margin-left: 600px;
+        }
+        .header .search{
+            width: 390px;
+            float: left;
+            margin-top: 5px;
+        }
+        .header .search input{
+            float: left;
+            width: 300px;
+            height: 24px;
+            border: 1px solid #FFFFFF;
+            border-radius: 3px 0px 0px 3px;
+
+        }
+        .header .search button{
+            float: left;
+            width: 75px;
+            height: 28px;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 11px;
+            border: 1px solid #ee7915;
+            background-color: #ee7915;
+            border-radius: 0px 3px 3px 0px;
+        }
+        .header .app{
+            margin: 13px 0px 0px 10px;
+            float: left;
+        }
+        .header .app li{
+            float: left;
+            margin-left: 20px;
+            list-style: none;
+        }
+        .wrapper{
+            width: 980px;
+            margin: 0px auto;
+            height: 1000px;
+        }
+        .menu{
+            width: 100%;
+            height: 40px;
+            background-color: #F5F7FA;
+        }
+        .menu ul{
+            line-height: 38px;
+            font-size: 13px;
+            padding: 0px;
+        }
+        .menu li{
+            float: left;
+            text-align: center;
+            list-style: none;
+            padding-left: 5px;
+        }
+        ul .hid{
+            display: none;
+            width: 100%;
+        }
+        .menu > ul > li:hover ul.hid{
+            display: block;
+        }
+        .menu .hid li{
+            float:left;
+            clear: both;
+        }
+        .hid{
+            display: none;
+            position: absolute;
+        }
+        .hid li{
+            background-color: #df4a32;
+            width: 70px;
+            border-bottom: 2px solid white;
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            margin-left: 5px;
+        }
+        .hid li:hover{
+            color: #df4a32;
+            background-color: white;
+        }
+        .menu>ul>li:hover .hid{
+            display: block;
+        }
+        .menu > ul> li:hover{
+            text-decoration: #00AEE8 underline
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="top">
+        <div class="search">
+            <input type="text" placeholder=" &#160; Nhập nội dung cần tìm..">
+            <button>TÌM KIẾM</button>
+        </div>
+        <ul class="app">
+            <li>MP3</li>
+            <li>ME</li>
+            <li>TV</li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="menu">
+        <ul>
+            <li style="border-top: 3px solid #00AEE8; color: #00AEE8;width: 41px"></li>
+            <li style="border-top: 3px solid #00AEE8; color: #00AEE8">Thời sự
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #00AEE8; color: #00AEE8">Thế giới
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #00AEE8; color: #00AEE8">Kinh doanh
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #00AEE8; color: #00AEE8">Pháp luật
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #008e00; color: #008e00">Xuất bản
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #008e00; color: #008e00">Thể thao
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #008e00; color: #008e00">Công nghệ
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #008e00; color: #008e00">Xe 360
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #ff6b00; color: #ff6b00">Giải trí
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #ff6b00; color: #ff6b00">Âm nhạc
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #ff6b00; color: #ff6b00">Phim ảnh
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #ff6b00; color: #ff6b00">Thời trang
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #FF0055; color: #FF0055">Sống trẻ
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #FF0055; color: #FF0055">Giáo dục
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #FF0055; color: #FF0055">Sức khỏe
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+            <li style="border-top: 3px solid #FF0055; color: #FF0055">Du lịch
+                <ul class="hid">
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                    <li>Tin tức</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
