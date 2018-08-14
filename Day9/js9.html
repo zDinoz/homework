@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        alert('Hello');
+        var a ,b,c, human;
+        a = 5;
+        b = "Something";
+        c = 2.5;
+        human ={Name :'Julia',Age :18,Sex:"Female"};
+        console.log('Kieu du lieu a: ' +typeof a +' b: ' +typeof b +' c: '+ typeof c);
+        console.log('Name:'+human.Name+ ' Age: '+human.Age + ' Sex: '+ human.Sex);
+
+        function tinhchuvihinhtron(DuongKinh) {
+            var ChuVi =DuongKinh*3.14 ;
+            return ChuVi;
+        }
+        var a = tinhchuvihinhtron(4.13);
+        console.log('Chu vi hinh tron ='+a);
+
+        function tinhchuvihinhchunhat(dai,rong) {
+            var ChuVi = (dai+rong)*2;
+            return ChuVi;
+        }
+        var b= tinhchuvihinhchunhat(5,4);
+        console.log('Chu vi HCN ='+b);
+        var f= new Date();
+        if(f.getHours()<12){
+            console.log('Good morning');
+        }
+        if(f.getHours()>12)
+        {
+            if(f.getHours()>20){
+                console.log('good night');
+            }
+            else {
+                console.log('good afternoon');
+            }
+        }
+
+        var x = new Date();
+        switch (x.getDay()){
+            case 0:
+                console.log('To day is: Sunday');
+                break;
+            case 1:
+                console.log('To day is: Monday');
+                break;
+            case 2:
+                console.log('To day is: Tuesday');
+                break;
+            case 3:
+                console.log('To day is: wednesday');
+                break;
+            case 4:
+                console.log('To day is: Thursday');
+                break;
+            case 5:
+                console.log('To day is: Friday');
+                break;
+            default:
+                console.log('To day is: Saturday');
+                break;
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
